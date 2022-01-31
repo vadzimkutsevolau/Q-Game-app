@@ -1,4 +1,6 @@
 module ApplicationHelper
+  include Pagy::Frontend
+
   def nav_tab(title, url, options = {})
     current_page = options.delete :current_page
 
@@ -18,7 +20,7 @@ module ApplicationHelper
   end
 
   def full_title(page_title = "")
-    base_title = "Q_Game"
+    base_title = "AskIt"
     if page_title.present?
       "#{page_title} | #{base_title}"
     else

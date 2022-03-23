@@ -6,32 +6,34 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
+gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
-# Use SCSS for stylesheets
-gem 'sass-rails', '>= 6'
+
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 5.0'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem 'webpacker', '6.0.0.rc.2'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.7'
+# gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-gem 'activerecord-import', '~> 1.2'
 
-gem 'draper', '~> 4.0'
-gem 'pagy', '~> 4.10'
-gem 'valid_email2', '~> 4.0'
-gem 'rubyzip', '~> 2'
+gem 'activerecord-import', '~> 1.2'
 gem 'caxlsx', '~> 3.1'
 gem 'caxlsx_rails', '~> 0.6'
+gem 'dotenv-rails', '~> 2.7'
+gem 'draper', '~> 4.0'
+gem 'i18n-tasks', '~> 0.9.34'
+gem 'lokalise_rails', '~> 2'
+gem 'pagy', '~> 4.10'
+gem 'rails-i18n', '~> 6'
 gem 'rubyXL', '~> 3.4'
+gem 'rubyzip', '~> 2'
+gem 'valid_email2', '~> 4.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -53,6 +55,7 @@ group :development do
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'rubocop', '~> 1.18', require: false
+  gem 'rubocop-i18n', '~> 3', require: false
   gem 'rubocop-performance', '~> 1.11', require: false
   gem 'rubocop-rails', '~> 2.11', require: false
 end

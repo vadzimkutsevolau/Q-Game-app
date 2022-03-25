@@ -2,6 +2,8 @@
 ru:
   activerecord:
     attributes:
+      comment:
+        body: Текст
       answer:
         body: Текст
         question: Вопрос
@@ -29,6 +31,9 @@ ru:
           archive: Выберите архив
           submit: Загрузить!
         upload_zipped: Загрузить пользователей в XLSX
+  comments:
+    create:
+      success: Комментарий создан!
   answers:
     create:
       success: Ответ создан!
@@ -78,6 +83,7 @@ ru:
     show:
       answers: Ответы
       write_answer: Напишите свой ответ
+      comments: Комментарии
     update:
       success: Вопрос обновлён!
   ru: Русский

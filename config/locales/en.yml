@@ -1,3 +1,4 @@
+---
 en:
   activerecord:
     attributes:
@@ -9,6 +10,8 @@ en:
       question:
         body: Body
         title: Title
+        tags: Tags
+        tag_ids: Tags
       user:
         created_at: Created at
         email: Email
@@ -33,6 +36,8 @@ en:
   comments:
     create:
       success: Comment created!
+    destroy:
+      success: Comment deleted!
   answers:
     create:
       success: Answer created!
@@ -66,7 +71,7 @@ en:
     users: Users
   pages:
     index:
-      title: Welcome to Q-game!
+      title: Welcome to AskIt!
   questions:
     create:
       success: Question created!
@@ -77,6 +82,7 @@ en:
     index:
       new: New question
       title: Questions
+      search_by_tags: Search by tags
     new:
       title: New question
     show:

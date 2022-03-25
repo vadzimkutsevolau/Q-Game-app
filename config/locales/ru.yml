@@ -10,6 +10,8 @@ ru:
       question:
         body: Текст
         title: Заголовок
+        tags: Теги
+        tag_ids: Теги
       user:
         created_at: Создан
         email: Email
@@ -34,6 +36,8 @@ ru:
   comments:
     create:
       success: Комментарий создан!
+    destroy:
+      success: Комментарий удалён!
   answers:
     create:
       success: Ответ создан!
@@ -67,7 +71,7 @@ ru:
     users: Пользователи
   pages:
     index:
-      title: Добро пожаловать в Q-game!
+      title: Добро пожаловать в AskIt!
   questions:
     create:
       success: Вопрос создан!
@@ -78,6 +82,7 @@ ru:
     index:
       new: Новый вопрос
       title: Вопросы
+      search_by_tags: Поиск по тегам
     new:
       title: Новый вопрос
     show:
